@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cartoonCharacterFragment">
+
+    <fragment
+        android:id="@+id/cartoonCharacterFragment"
+        android:name="com.ko.rickmorty.ui.cartooncharacter.CartoonCharacterFragment"
+        android:label="@string/characters">
+        <action
+            android:id="@+id/action_cartoonCharacterFragment_to_cartoonCharacterDetailFragment"
+            app:destination="@id/cartoonCharacterDetailFragment" />
+        <action
+            android:id="@+id/action_cartoonCharacterFragment_to_competitionFragment"
+            app:destination="@id/competitionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartoonCharacterDetailFragment"
+        android:name="com.ko.rickmorty.ui.cartooncharacterdetail.CartoonCharacterDetailFragment"
+        android:label="@string/detail">
+        <action
+            android:id="@+id/action_cartoonCharacterDetailFragment_to_cartoonCharacterFragment"
+            app:destination="@id/cartoonCharacterFragment" />
+        <argument
+            android:name="argCartoonCharacter"
+            app:argType="com.ko.rickmorty.data.model.CartoonCharacter"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/competitionFragment"
+        android:name="com.ko.rickmorty.ui.competition.CompetitionFragment"
+        android:label="@string/competition">
+        <action
+            android:id="@+id/action_competitionFragment_to_cartoonCharacterFragment"
+            app:destination="@id/cartoonCharacterFragment" />
+    </fragment>
+</navigation>
