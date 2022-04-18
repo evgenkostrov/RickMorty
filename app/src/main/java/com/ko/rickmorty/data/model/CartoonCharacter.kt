@@ -6,7 +6,6 @@ import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
-import com.ko.rickmorty.data.model.Origin
 import java.io.Serializable
 
 @Entity(tableName = "cartoon_character")

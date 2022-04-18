@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import android.widget.ImageView
 import android.widget.TextView
-//import androidx.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -29,22 +29,22 @@ fun placeholderProgressBar(context: Context): CircularProgressDrawable {
     }
 }
 
-//@BindingAdapter("android:downloadUrl")
-//fun downloadImage(view: ImageView, url: String?) {
-//    view.downloadFromUrl(url, placeholderProgressBar(view.context))
-//}
-//
-//@BindingAdapter("android:lifeStatusColor")
-//fun setColorOfLifeStatus(view: TextView, lifeStatus: Int) {
-//    when (lifeStatus) {
-//        1 -> {
-//            view.setTextColor(Color.GREEN)
-//        }
-//        -1 -> {
-//            view.setTextColor(Color.RED)
-//        }
-//        else -> {
-//            view.setTextColor(Color.GRAY)
-//        }
-//    }
-//}
+@BindingAdapter("android:downloadUrl")
+fun downloadImage(view: ImageView, url: String?) {
+    view.downloadFromUrl(url, placeholderProgressBar(view.context))
+}
+
+@BindingAdapter("android:lifeStatusColor")
+fun setColorOfLifeStatus(view: TextView, lifeStatus: Int) {
+    when (lifeStatus) {
+        1 -> {
+            view.setTextColor(Color.GREEN)
+        }
+        -1 -> {
+            view.setTextColor(Color.RED)
+        }
+        else -> {
+            view.setTextColor(Color.GRAY)
+        }
+    }
+}

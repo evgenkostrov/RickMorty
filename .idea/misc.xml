@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_baseline_update_24.xml" value="0.182" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/cartoon_character_list_row.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_cartoon_character.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_cartoon_character_detail.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_competition.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/menu/update_menu.xml" value="0.18177083333333333" />
       </map>
     </option>
   </component>
