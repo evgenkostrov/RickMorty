@@ -22,7 +22,7 @@ class App : Application(), Injector {
 
         appComponent = DaggerAppComponent.builder()
             .appModule(AppModule(applicationContext))
-            .netModule(NetModule("BASE_URL"))
+            .netModule(NetModule("https://rickandmortyapi.com/api/"))
             .build()
     }
 
